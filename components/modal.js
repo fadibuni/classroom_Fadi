@@ -48,7 +48,10 @@ export default function Modal({ userId, certificationNames }) {
           <>
             <div className='bg-zinc-200 opacity-100 fixed inset-0 z-50'>
               <div className='flex h-screen justify-center items-center'>
-                <div className='flex-col justify-center bg-[#0a0a23] py-12 px-24 border-4 border-sky-500 rounded-xl '>
+                <div
+                  className='flex-col justify-center bg-[#0a0a23] py-12 px-24 border-4 border-sky-500 rounded-xl '
+                  style={{ maxHeight: '100vh', overflow: 'auto' }}
+                >
                   <div className='flex text-lg text-white justify-center items-center'>
                     Create Class
                   </div>
